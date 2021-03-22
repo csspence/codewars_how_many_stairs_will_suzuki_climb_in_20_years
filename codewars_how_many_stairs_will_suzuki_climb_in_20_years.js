@@ -16,6 +16,13 @@ sunday = [6737, 7244, 5776, 9826, 7057, 9247, 5842, 5484, 6543, 5153, 6832, 8274
 Your function should return the 20 year estimate of the stairs climbed using the formula above.
 */
 
-function stairsIn20(s){
-  //your code here
+const stairsIn20 = (s) => {
+  let total = 0;
+  for(let i = 0; i < s.length; i++) {
+    for(let j = 0; j < s[i].length; j++) {
+      total += s[i][j];
+    }
+  }
+
+  return total * 20
 }
